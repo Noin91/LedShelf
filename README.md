@@ -11,7 +11,7 @@ Entwickelt als Auftragsarbeit für eine Tischlerei, hier in bereinigter Form (oh
 
 | Ansicht | Beschreibung |
 |---|---|
-| ![Startseite](docs/images/startseite.png) | TODO |
+| ![Startseite](/Images/LedShelf_Bild_1.png) | TODO |
 | ![Hardware](docs/images/hardware.png) | Prototyp mit LED-Reihen und Tastern |
 
 ## Architektur

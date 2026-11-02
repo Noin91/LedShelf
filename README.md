@@ -58,7 +58,7 @@ Der Hardware-Prototyp ist im aktuellen Stand ein eigenständiger Arduino-Sketch.
 Voraussetzung: Docker mit Compose.
 
 ```bash
-cp .env.example .env     # Werte eintragen, .env niemals committen
+cp .env.example .env
 ./StartDockerProdContainer.sh
 ```
 
@@ -70,9 +70,9 @@ Alle Zugangsdaten kommen über Umgebungsvariablen und stehen nicht im Repository
 
 | Variable | Zweck |
 |---|---|
-| `AZURE_CLIENT_ID` | Client-ID der Azure-App-Registrierung |
-| `AZURE_TENANT_ID` | Verzeichnis (Tenant) |
-| `AZURE_CLIENT_SECRET` | Secret der App-Registrierung |
+| `AZURE_CLIENT_ID` | Client-ID der Azure App Registrierung |
+| `AZURE_TENANT_ID` | Verzeichnis (Azure Tenant) |
+| `AZURE_CLIENT_SECRET` | Secret der App Registrierung |
 | `AZURE_JSONWEB_TOKEN` | Schlüssel zum Signieren der Tokens |
 
 ## Hardware-Prototyp
@@ -89,7 +89,5 @@ Alle Zugangsdaten kommen über Umgebungsvariablen und stehen nicht im Repository
 - Keine Zugangsdaten im Repository, Konfiguration über `.env` (in `.gitignore`).
 - Startskript und Konfigurationsdateien mit Geheimnissen sind ausgeschlossen.
 - Standard-Zugangsdaten für den Administrator sind nicht Teil dieser Dokumentation und werden beim ersten Start gesetzt. <!-- TODO: an die Realität anpassen -->
-
-## Was ich daraus gelernt habe
 
 <!-- TODO: 3-4 Stichpunkte, z. B. Container-Betrieb, Anbindung an Azure, Umgang mit Geheimnissen, Zusammenarbeit mit dem Kunden. -->
